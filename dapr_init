@@ -1,0 +1,5 @@
+Dapr runtime installed to /home/gitpod/.dapr/bin, 
+
+you may run the following to add it to your path if you want to run daprd directly:
+
+    export PATH=$PATH:/home/gitpod/.dapr/bin
