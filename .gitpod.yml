@@ -7,8 +7,8 @@ tasks:
       wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash && \
       dapr init && \
       export PATH=$PATH:/home/gitpod/.dapr/bin
-  - name: Set Glados K8s context
-    command: echo $K8S_CTX | base64 -d > ~/.kube/config
+#  - name: Set Glados K8s context
+#    command: echo $K8S_CTX | base64 -d > ~/.kube/config
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
