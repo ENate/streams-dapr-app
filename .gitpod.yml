@@ -2,6 +2,10 @@
 tasks:
   - init: echo 'init script' # runs during prebuild
     command: echo 'start script'
+  - name: dapr-bash
+  - init:
+      wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash &&
+      dapr init
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
