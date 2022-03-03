@@ -3,7 +3,7 @@ tasks:
   - init: echo 'init script' # runs during prebuild
     command: echo 'start script'
   - name: dapr-bash
-  - init:
+    command:
       wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash && \
       dapr init && \
       export PATH=$PATH:/home/gitpod/.dapr/bin
