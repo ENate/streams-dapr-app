@@ -5,7 +5,7 @@ tasks:
   - name: init-bash
     init: echo 'init script' # runs during prebuild
   - name: dapr-bash
-    command: wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash && 
+    command: wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
   - command: dapr init
   - command: export PATH=$PATH:/home/gitpod/.dapr/bin
 #  - name: Set Glados K8s context
