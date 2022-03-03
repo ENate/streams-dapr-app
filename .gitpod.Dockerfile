@@ -4,4 +4,4 @@ RUN wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh
 
 RUN dapr init
 
-ENV export PATH=$PATH:/home/gitpod/.dapr/bin
+RUN export PATH=$PATH:/home/gitpod/.dapr/bin
