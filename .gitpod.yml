@@ -2,12 +2,12 @@
 image: 
   file: .gitpod.Dockerfile
 tasks:
-  - name: init-bash
-    init: echo 'init script' # runs during prebuild
+  # - name: init-bash
+  #  init: echo 'init script' # runs during prebuild
   - name: dapr-bash
     command: wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
-  - command: dapr init
-  - command: export PATH=$PATH:/home/gitpod/.dapr/bin
+  - init: dapr init
+  - command : export PATH=$PATH:/home/gitpod/.dapr/bin
 #  - name: Set Glados K8s context
 #    command: echo $K8S_CTX | base64 -d > ~/.kube/config
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
