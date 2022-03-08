@@ -6,6 +6,7 @@ tasks:
      init: echo 'init script' # runs during prebuild
    - name: daprinit
      init: dapr init
+     command: export PATH=$PATH:/home/gitpod/.dapr/bin
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
