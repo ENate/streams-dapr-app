@@ -42,8 +42,7 @@ RUN export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" && \
     kubectl krew install cert-manager && \
     kubectl krew install ca-cert && \
     kubectl krew install get-all && \
-    kubectl krew install ingress-nginx    
-    
+    kubectl krew install ingress-nginx
 
 RUN sudo mkdir /var/lib/pgadmin && \
     sudo chmod 777 /var/lib/pgadmin
