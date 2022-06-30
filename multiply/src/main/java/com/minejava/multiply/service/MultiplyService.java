@@ -9,7 +9,7 @@ public interface MultiplyService {
      * 
      * @return a multiplication of randomly generated numbers
      */
-    Multiply createRandoMultiply();
+    Multiply createRandomMultiply();
 
     /**
      * @return true if the attempt matches the result of the multiplication,

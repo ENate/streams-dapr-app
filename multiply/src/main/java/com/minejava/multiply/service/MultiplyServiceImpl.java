@@ -6,15 +6,17 @@ import com.minejava.multiply.domain.MultiplyResultAttempt;
 public class MultiplyServiceImpl implements MultiplyService{
 
     @Override
-    public Multiply createRandoMultiply() {
+    public Multiply createRandomMultiply() {
         // DO Auto-generated method stub
         return null;
     }
 
     @Override
-    public boolean checkAttempt(MultiplyResultAttempt resultAttempt) {
+    public boolean checkAttempt(final MultiplyResultAttempt resultAttempt) {
         // TO DO Auto-generated method stub
-        return false;
+        return resultAttempt.getResultAttempt() ==
+            resultAttempt.getMultiply().getFactorA() * 
+            resultAttempt.getMultiply().getFactorB();
     }
     
 }
